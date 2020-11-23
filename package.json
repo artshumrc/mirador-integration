@@ -1,7 +1,7 @@
 {
-  "name": "mirador-integration",
-  "version": "0.0.0",
-  "description": "",
+  "name": "mirador-giza",
+  "version": "0.1.0",
+  "description": "Customized Mirador build for the Giza Project",
   "private": true,
   "scripts": {
     "parcel": "parcel parcel/index.html",
@@ -12,16 +12,16 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^3.6.0",
-    "mirador": "^3.0.0-rc.4",
-    "mirador-annotations": "^0.3.0",
+    "mirador": "^3.0.0",
     "mirador-dl-plugin": "^0.12.0",
-    "mirador-image-tools": "^0.8.0",
-    "mirador-share-plugin": "^0.8.0",
+    "mirador-image-tools": "^0.10.0",
+    "mirador-share-plugin": "^0.9.0",
     "parcel-bundler": "^1.12.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "//": "When using M3, dl-plugin@0.13.0 and share@0.10.0 caused issues"
 }

@@ -9,21 +9,14 @@
     <script>
       // Mirador and miradorInstance are global window variables
       const config = {
-        id: 'demo',
-        window: {
-          defaultSideBarPanel: 'annotations',
-        },
         windows: [{
            imageToolsEnabled: true,
            manifestId: 'https://iiif.harvardartmuseums.org/manifests/object/299843',
            loadedManifest: 'https://iiif.harvardartmuseums.org/manifests/object/299843'
         }]
       };
-      var addConfig = Mirador.default.actions.importConfig(config);
+      var addConfig = Mirador.actions.importConfig(config);
       miradorInstance.store.dispatch(addConfig);
-      var windowId = Object.keys(window.miradorInstance.store.getState().windows)[0];
-      var toggleSidebarAction = Mirador.default.actions.toggleWindowSideBar(windowId);
-      miradorInstance.store.dispatch(toggleSidebarAction);
     </script>
   </body>
 </html>
