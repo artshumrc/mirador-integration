@@ -6,7 +6,7 @@ import miradorSharePlugin from 'mirador-share-plugin';
 import miradorShareDialog from 'mirador-share-plugin';
 
 const config = {
-  id: 'demo',
+  id: 'mirador',
   window: {
     allowClose: false,
     allowFullscreen: true,

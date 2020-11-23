@@ -6,7 +6,9 @@
   "scripts": {
     "parcel": "parcel parcel/index.html",
     "webpack": "webpack --config webpack/webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "start": "webpack serve --open webpack/webpack.dev.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +23,11 @@
     "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.4.0"
   },
-  "//": "When using M3, dl-plugin@0.13.0 and share@0.10.0 caused issues"
+  "//": "When using M3, dl-plugin@0.13.0 and share@0.10.0 caused issues",
+  "devDependencies": {
+    "webpack-merge": "^5.4.0"
+  }
 }
