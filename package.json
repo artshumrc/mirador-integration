@@ -7,6 +7,7 @@
     "parcel": "parcel parcel/index.html",
     "webpack": "webpack --config webpack/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "buildsingle": "webpack --config webpack/webpack.prodsingle.js --optimize-max-chunks 1",
     "build": "webpack --config webpack/webpack.prod.js",
     "start": "webpack serve --open webpack/webpack.dev.js"
   },
